@@ -108,8 +108,13 @@ body > .container-fluid{
   border-width: 3px;
 }
 
+.paypalBTN{
+  text-align: center;
+  margin-left: 300px;
+}
+
 #details{
-  background: #E8EBFC;
+  background: #a6d1ee;
 }
 /* Change color of text here, since white is not readable */
 #details h1, #details h2, #details p, #details li{
@@ -148,7 +153,7 @@ body > .container-fluid{
 }
 
 #about{
-  background-color: var(--light-back);
+  background-color: #E8EBFC;
 }
 #about h1{
   color: var(--dark-text);
@@ -165,7 +170,7 @@ body > .container-fluid{
 }
 
 #registration{
-  background: var(--dark-back);
+  background: #86b2d1;
 }
 #registration h1{
   color: white;
@@ -182,6 +187,16 @@ body > .container-fluid{
   color: white;
   font-size: 18px;
   line-height: 32px;
+}
+
+#paypal {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.reg {
+  background-color: red;
+  margin-left: 200px;
 }
 
 #documents{
@@ -201,6 +216,11 @@ body > .container-fluid{
   background: var(--light-back);
   color: var(--dark-text);
 }
+
+#faq h1{
+  color: var(--dark-text);
+}
+
 #faq h2{
   font-size: 26px;
   color: var(--dark-text);
@@ -212,7 +232,7 @@ body > .container-fluid{
 }
 
 #schedule{
-  background: var(--dark-back);
+  background: #f0b6b6;
 }
 #schedule p, #schedule li{
   font-size: 22px;
@@ -237,16 +257,21 @@ body > .container-fluid{
 }
 
 #contact{
-  background: var(--dark-back);
+  background: var(--light-back);
 }
+
+#contact h1{
+  color: var(--dark-text);
+}
+
 #contact h2{
   font-size: 26px;
-  color: white;
+  color: var(--dark-text);
 }
 #contact p, #contact li{
   font-size: 18px;
   line-height: 32px;
-  color: white;
+  color: var(--dark-text);
 }
 
 /* FAQ */
@@ -283,7 +308,7 @@ body > .container-fluid{
   Banner, Details, Map Buttons
 ******************************************/
 #banner-cont{
-  background: #E8EBFC;
+  background: #a6d1ee;
 }
 #banner{
   width: 70%;
@@ -291,20 +316,79 @@ body > .container-fluid{
   display: block;
 }
 
-#schedule .left-side{
-  float: left;
-  width: 50%;
-  padding-right: 1.5%;
-  border-style: solid;
-  border-width: 0;
-  border-right-width: 0.5px;
-  border-color: #566172;
+.schedule-warp{
+    padding-right:20px;
+    padding-left:20px;
+    padding: 20px 30px;
+    border: solid 1px #ddd;
+    background-color: #f5f5f5;
+    -webkit-transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
+    transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
 }
 
-#schedule .right-side{
-  float: right;
+.schedule-start{
+  color: #ef6158;
+}
+.schedule-warp:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,.07);
+    border: solid 1px black;
+}
+.schedule-warp{
   width: 50%;
-  padding-left: 1.5%;
+  margin-left: 130px;
+  margin-bottom: 90px;
+}
+
+.schedule-tag{
+    color:#fff;
+    background-color: #ef6158;
+    padding:3px 8px;
+    margin-right: 15px;
+    width: 180px;
+    font-family: 'Titillium Web';
+    text-align: center;
+}
+
+.schedule-header{
+    margin-bottom:80px;
+}
+.schedule-card{
+    position: relative;
+    margin-bottom: 0.7em;
+}
+.schedule-card:hover .insidebox {
+    transform: scale(1.033);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.schedule-card:hover:after {
+    background: #8a56d1;
+    width: 25px;
+}
+.schedule-card:after {
+    height: 2px;
+    width: 22px;
+    background: #ddd;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transition: all 0.3s ease-in;
+}
+.insidebox {
+    box-shadow: 0 0px 5px rgba(0,0,0,.07);
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: #6164B2;
+    transition: all 0.2s ease-in;
 }
 
 /* This would be so much easier with angular */
