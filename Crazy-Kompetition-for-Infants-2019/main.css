@@ -170,7 +170,7 @@ body > .container-fluid{
 }
 
 #registration{
-  background: #86b2d1;
+  background: #99cfe0;
 }
 #registration h1{
   color: white;
@@ -194,10 +194,29 @@ body > .container-fluid{
   padding: 7% 15%;
 }
 
-.reg {
-  background-color: red;
-  margin-left: 200px;
+#reg-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
+
+.laptop-img {
+  width: 230px;
+  height: 180px;
+}
+
+.notepad-img{
+  width: 172px;
+  height: 182px;
+}
+
+.mug-img {
+  width: 230px;
+  height: 180px;
+}
+
+
 
 #documents{
   background: var(--dark-back);
@@ -334,9 +353,9 @@ body > .container-fluid{
     border: solid 1px black;
 }
 .schedule-warp{
-  width: 50%;
-  margin-left: 130px;
+  width: 600px;
   margin-bottom: 90px;
+
 }
 
 .schedule-tag{
@@ -361,7 +380,7 @@ body > .container-fluid{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .schedule-card:hover:after {
-    background: #8a56d1;
+    background: #ef6158;
     width: 25px;
 }
 .schedule-card:after {
