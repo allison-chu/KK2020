@@ -198,6 +198,10 @@ body > .container-fluid{
   padding: 7% 15%;
 }
 
+.payPalValue{
+  color: black;
+}
+
 #reg-img {
   display: block;
   margin-left: auto;
@@ -224,8 +228,6 @@ body > .container-fluid{
   width: 180px;
   height: 150px;
 }
-
-
 
 #documents{
   background: var(--dark-back);
